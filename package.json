@@ -1,13 +1,22 @@
 {
   "name": "discord",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.0.3"
+    "@discordjs/rest": "^1.0.1",
+    "discord.js": "^14.0.3",
+    "dotenv": "^16.0.1"
+  },
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon src/index.js",
+    "lint-fix": "npx eslint --fix src/**/*.js",
+    "lint": "npx eslint src/**/*.js"
   },
   "devDependencies": {
     "eslint": "^8.20.0",
+    "nodemon": "^2.0.19",
     "prettier": "^2.7.1"
   }
 }
